@@ -1,4 +1,4 @@
-const API = process.env.REACT_APP_API_BASE || 'http://localhost:4000/api';
+const API = process.env.REACT_APP_API_URL || 'http://localhost:4000/api';
 
 export async function createUser(payload) {
   const res = await fetch(`${API}/users`, {
