@@ -39,6 +39,82 @@ body {
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
+body {
+  background: #f3e8ff;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+div {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #0001;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+  padding: 10px;
+  border: 1px solid #d1c4e9;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus {
+  border: 1.5px solid #7c3aed;
+}
+
+button {
+  background: linear-gradient(90deg, #a78bfa, #7c3aed);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 1px 4px #0002;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #7c3aed, #a78bfa);
+  transform: translateY(-2px) scale(1.04);
+}
+
+table {
+  background: #faf8ff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px #0001;
+}
+
+th, td {
+  border: none !important;
+}
+
+tr:nth-child(even) {
+  background: #f3e8ff;
+}
+
+tr:hover td {
+  background: #ede9fe;
+}
+
+section {
+  background: none;
+  box-shadow: none;
+}
+
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  th, td {
+    padding: 10px 5px;
+  }
 }
